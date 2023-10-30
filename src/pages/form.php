@@ -1,8 +1,8 @@
-<div class="form-card">
+<div class="">
     <div class="panel-form"></div>
     <div class="card">
         <div class="d-flex justify-content-center">
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form method="POST" role="form">
                 <?php
                 include "config/koneksi.php";
                 if (isset($_POST['simpan'])) {
@@ -23,6 +23,44 @@
                     }
                 }
                 ?>
+                <form role="form" method="POST">
+                    <div class="form-group">
+                        <p for="exampleInputEmail1">Nama</p>
+                        <input type="text" name="username" class="form-control" placeholder="Name" required="">
+                        <small id="emailHelp" class="form-text text-muted">Masukan username dengan baik dan benar</small>
+                    </div>
+                    <div class="form-group">
+                        <p for="exampleInputPassword1">No. Telp</p>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                    </div>
+                    <div class="form-group">
+                        <p for="exampleInputPassword1">Merek Motor</p>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                    </div>
+                    <div class="form-group">
+                        <p for="exampleInputPassword1">Jenis Motor</p>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <p for="exampleInputPassword1">Cek Servicer</p>
+                        <select name="jenis_service" required>
+                            <option value="-">- Pilih Service -
+                            <option value="Service Berkala">Service Berkala
+                            <option value="Service Ringan">Service Ringan
+                            <option value="Service Besar">Service Besar
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p for="exampleInputPassword1">Alamat</p>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <p class="form-check-label" for="exampleCheck1">Check me out</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="login">Login</button>
+                </form>
                 <table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
                     <tr height="46">
                         <td width="10%"> </td>
@@ -31,51 +69,11 @@
                             <font color="orange" size="2">ISI SESUAI KE INGINAN ANDA TERIMA KASIH </font>
                         </td>
                     </tr>
-                    <tr height="45">
-                        <td> </td>
-                        <td>Nama</td>
-                        <td>
-                            <input type="text" name="nama" size="20" maxlength="20" required />
-                        </td>
-                    </tr>
-                    <tr height="46">
-                        <td> </td>
-                        <td>No. Telp</td>
-                        <td>
-                            <input type="text" name="telepon" size="20" maxlength="12" required />
-                        </td>
-                    </tr>
-                    <tr height="46">
-                        <td> </td>
-                        <td>Merek Motor</td>
-                        <td>
-                            <input type="text" name="merek_motor" size="20" maxlength="30" required />
-                        </td>
-                    </tr>
-                    <tr height="46">
-                        <td> </td>
-                        <td>Jenis Motor</td>
-                        <td>
-                            <input type="text" name="jenis_motor" size="20" maxlength="30" required />
-                        </td>
-                    </tr>
-                    <tr height="46">
-                        <td> </td>
-                        <td class="">Cek Service</td>
-                        <td>
-                            <select name="jenis_service" required>
-                                <option value="-">- Pilih Service -
-                                <option value="Service Berkala">Service Berkala
-                                <option value="Service Ringan">Service Ringan
-                                <option value="Service Besar">Service Besar
-                            </select>
-                        </td>
-                    </tr>
                     <tr height="46">
                         <td> </td>
                         <td>Alamat</td>
                         <td>
-                            <textarea name="alamat" id="" cols="30" rows="4" required></textarea>
+
                         </td>
                     </tr>
                     <tr height="46">
